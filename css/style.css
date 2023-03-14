@@ -6,9 +6,8 @@
 }
 
 img {
-    width: 100%;
-    border-radius: 20px;
-    object-fit: contain;
+    max-width: 100%;
+
 }
 
 
@@ -33,6 +32,22 @@ img {
     width: 100%;
     height: 50vh;   
     border: 2px dashed black;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.picture {
+    height: 100%;
+    /* display: none; */
+}
+
+.picture.active {
+    display: block;
 }
 
 .prev-btn,
