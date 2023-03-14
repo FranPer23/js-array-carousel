@@ -21,3 +21,26 @@ console.log(picturesArray);
 
 let activeItemIndex = 0;
 picturesArray[activeItemIndex].classList.add("active");
+
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+
+nextBtn.addEventListener("click", function() {
+
+    prevBtn.classList.remove("hidden")
+
+    if (activeItemIndex < (imgsArray.length - 1)) {
+   
+
+    imgsArray[activeItemIndex].classList.remove("active");
+    activeItemIndex++; 
+    imgsArray[activeItemIndex].classList.add("active");
+    
+
+    if (activeItemIndex === imgsArray.length - 1) {
+        nextBtn.classList.add("hidden");
+    }
+    
+    }
+
+})
